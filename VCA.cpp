@@ -28,6 +28,9 @@ int main(){
 		
 		int res=100000;
 		while(HEAD<=TAIL){
+			if(HEAD==TAIL){
+				if(HEAD==i+3*k-1 || HEAD==s.size()+1) break;
+			}
 			int MID=(HEAD+TAIL)/2;
 			if(freqA[MID]>=freqA[i]+k && freqV[MID]>=freqV[i]+k && freqC[MID]>=freqC[i]+k){
 				res=MID;
